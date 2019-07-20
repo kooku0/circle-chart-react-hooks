@@ -1,0 +1,30 @@
+
+.circle-chart {
+  max-width: 100px;
+}
+.circle-bg {
+  fill: none;
+  stroke: #dfdfdf;
+  stroke-width: 3;
+}
+.circle {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.percentage {
+  font-size: 0.4em;
+  text-anchor: middle;
+  animation: fadein 2s;
+}
